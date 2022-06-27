@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap w-full mb-20">
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Mera Bharat- My India
+                        Tourism</h1>
+                    <div class="h-1 w-20 bg-teal-500 rounded"></div>
+                </div>
+                <p class="lg:w-1/2 w-full leading-relaxed text-base"> <strong>India is the one land that all men
+                        desire to see, and having seen once, by even a glimpse, would not give that glimpse for all the
+                        shows of all the rest of the globe combined.</strong> </p>
+            </div>
+            
+            <div class="flex flex-wrap -m-4">
+            {% for dest in dests %}
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                        src="{{dest.prod_img.url}}"
+                        alt="content">
+                        <h3 class="tracking-widest text-teal-500 text-xs font-medium title-font">INDIA</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">{{dest.title}}</h2>
+                        <p class="leading-relaxed text-base">The largest city in the union territory of Jammu and
+                            Kashmir, Srinagar is a mystique city situated at the banks of the Jhelum. It is also fondly
+                            called “Heaven on Earth” .</p>
+                    </div>
+
+                </div>
+            {% endfor %}
+
+                <!--<div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="https://static-blog.treebo.com/wp-content/uploads/2018/07/Manali.jpg" alt="content">
+                        <h3 class="tracking-widest text-teal-500 text-xs font-medium title-font">INDIA</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Manali</h2>
+                        <p class="leading-relaxed text-base">Manali is a picturesque hill station cosily situated amidst
+                            the Dhauladhar Ranges in Himachal Pradesh. Blessed with breathtaking views, crystal clear
+                            streams. </p>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="https://static-blog.treebo.com/wp-content/uploads/2018/08/Mount-Abu.jpg" alt="content">
+                        <h3 class="tracking-widest text-teal-500 text-xs font-medium title-font">INDIA</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Mount Abu</h2>
+                        <p class="leading-relaxed text-base">One of the famous tourist attractions in Rajasthan, Mount
+                            Abu is a favourite destination to visit in April if you wish to beat the heat and unwind.
+                        </p>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="https://static-blog.treebo.com/wp-content/uploads/2018/03/Kasauli-.jpg" alt="content">
+                        <h3 class="tracking-widest text-teal-500 text-xs font-medium title-font">INDIA</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Kasauli</h2>
+                        <p class="leading-relaxed text-base">Surrounded by dense pine and cedar forests and dotted with
+                            Colonial-era architecture, Kasauli indeed is one of the best places to visit</p>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="flex flex-wrap -m-4">
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-100 p-6 rounded-lg">
+                            <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                src="https://static-blog.treebo.com/wp-content/uploads/2018/03/Lonavala.jpg"
+                                alt="content">
+                            <h3 class="tracking-widest text-teal-500 text-xs font-medium title-font">INDIA</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Lonavla</h2>
+                            <p class="leading-relaxed text-base">A perfect weekend destination with scenic views and
+                                blissful climate, Lonavala is the place.Another reason to visit this place is its
+                                connectivity to other beautiful places.</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-100 p-6 rounded-lg">
+                            <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                src="https://static-blog.treebo.com/wp-content/uploads/2018/02/Matheran-Maharashtra-5.jpg"
+                                alt="content">
+                            <h3 class="tracking-widest text-teal-500 text-xs font-medium title-font">INDIA</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Matheran</h2>
+                            <p class="leading-relaxed text-base">A popular tourist attraction, and surprisingly the
+                                smallest hill station in India, Matheran is famous for its incredible vistas,
+                                pollution-free air, muddy trails and the lush green hills present around this place.</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-100 p-6 rounded-lg">
+                            <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                src="https://static-blog.treebo.com/wp-content/uploads/2018/01/Panchmarhi.jpg"
+                                alt="content">
+                            <h3 class="tracking-widest text-teal-500 text-xs font-medium title-font">INDIA</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Panchmari-Bhopal</h2>
+                            <p class="leading-relaxed text-base">Pachmarhi is a well-known hill station in the
+                                Hoshangabad district of Madhya Pradesh. In fact, it is the only hill station in this
+                                state.</p>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-100 p-6 rounded-lg">
+                            <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                src="https://static-blog.treebo.com/wp-content/uploads/2018/06/Marine-Drive-Mumbai.jpg"
+                                alt="content">
+                            <h3 class="tracking-widest text-teal-500 text-xs font-medium title-font">INDIA</h3>
+                            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Mumbai</h2>
+                            <p class="leading-relaxed text-base">Mumbai is as much a commercial capital as it is home to
+                                innumerable awe-inspiring monuments, .</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="flex flex-wrap -m-4">
+                        <div class="xl:w-1/4 md:w-1/2 p-4">
+                            <div class="bg-gray-100 p-6 rounded-lg">
+                                <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                    src="https://static-blog.treebo.com/wp-content/uploads/2018/01/ooty.jpg"
+                                    alt="content">
+                                <h3 class="tracking-widest text-teal-500 text-xs font-medium title-font">INDIA</h3>
+                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Ooty</h2>
+                                <p class="leading-relaxed text-base">The quintessential hill station in Tamil Nadu is
+                                    rightly called the Queen of Hill Station, Ooty or Udhagamandalam is a popular
+                                    destination that attracts tourists all year round.</p>
+                            </div>
+                        </div>
+                        <div class="xl:w-1/4 md:w-1/2 p-4">
+                            <div class="bg-gray-100 p-6 rounded-lg">
+                                <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                    src="https://static-blog.treebo.com/wp-content/uploads/2018/01/Masinagudi.jpg"
+                                    alt="content">
+                                <h3 class="tracking-widest text-teal-500 text-xs font-medium title-font">INDIA</h3>
+                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Masinagudi</h2>
+                                <p class="leading-relaxed text-base">A tranquil holiday destination near Mysore,
+                                    Masinagudi is a true haven for animal and wildlife lovers.</p>
+                            </div>
+                        </div>
+                        <div class="xl:w-1/4 md:w-1/2 p-4">
+                            <div class="bg-gray-100 p-6 rounded-lg">
+                                <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                    src="https://static-blog.treebo.com/wp-content/uploads/2018/05/Lamb%E2%80%99s-Rock-Coonoor.jpg"
+                                    alt="content">
+                                <h3 class="tracking-widest text-teal-500 text-xs font-medium title-font">INDIA</h3>
+                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Coonor</h2>
+                                <p class="leading-relaxed text-base">Coonoor is another serene and picturesque hill
+                                    station in Tamil Nadu that is located just 19km from Ooty. The second largest hill
+                                    station in the Western Ghats.</p>
+                            </div>
+                        </div>
+                        <div class="xl:w-1/4 md:w-1/2 p-4">
+                            <div class="bg-gray-100 p-6 rounded-lg">
+                                <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                    src="https://static-blog.treebo.com/wp-content/uploads/2018/06/Borra-Caves-on-Ananthagiri-Hills.jpg"
+                                    alt="content">
+                                <h3 class="tracking-widest text-teal-500 text-xs font-medium title-font">INDIA</h3>
+                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Bora Caves</h2>
+                                <p class="leading-relaxed text-base">These caves are naturally formed with the river
+                                    water gushing through the limestone area, converting calcium carbonate to calcium
+                                    bicarbonate in the process..</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="flex flex-wrap -m-4">
+                            <div class="xl:w-1/4 md:w-1/2 p-4">
+                                <div class="bg-gray-100 p-6 rounded-lg">
+                                    <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                        src="https://static-blog.treebo.com/wp-content/uploads/2018/07/Andaman-Nicobar.jpg"
+                                        alt="content">
+                                    <h3 class="tracking-widest text-teal-500 text-xs font-medium title-font">INDIA
+                                    </h3>
+                                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Andaman and Nicobar
+                                        Islands</h2>
+                                    <p class="leading-relaxed text-base">If beaches, islands, and watersports are your
+                                        kind of vacation, Andaman and Nicobar Islands are one of the spectacular places
+                                        to visit in Indian in April for a memorable trip.</p>
+                                </div>
+                            </div>
+                            <div class="xl:w-1/4 md:w-1/2 p-4">
+                                <div class="bg-gray-100 p-6 rounded-lg">
+                                    <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                        src="https://static-blog.treebo.com/wp-content/uploads/2018/06/Buddha-Statue-of-Hyderabad.jpg"
+                                        alt="content">
+                                    <h3 class="tracking-widest text-teal-500 text-xs font-medium title-font">INDIA
+                                    </h3>
+                                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Hyderabad</h2>
+                                    <p class="leading-relaxed text-base">Although a commercial and high-tech city,
+                                        Hyderabad has its own charm and attracts tourists from all across the country.
+                                        The old-world charm of the city blends well with the modernity.</p>
+                                </div>
+                            </div>
+                            <div class="xl:w-1/4 md:w-1/2 p-4">
+                                <div class="bg-gray-100 p-6 rounded-lg">
+                                    <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                        src="https://static-blog.treebo.com/wp-content/uploads/2018/07/Kalimpong.jpg"
+                                        alt="content">
+                                    <h3 class="tracking-widest text-teal-500 text-xs font-medium title-font">INDIA
+                                    </h3>
+                                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Kalimpong
+                                    </h2>
+                                    <p class="leading-relaxed text-base">Blessed with sprawling green valleys,
+                                        spectacular vistas, panoramic views and rich culture, Kalimpong is a perfect
+                                        getaway from the nearby coastal cities to enjoy the pleasant weather.</p>
+                                </div>
+                            </div>
+                            <div class="xl:w-1/4 md:w-1/2 p-4">
+                                <div class="bg-gray-100 p-6 rounded-lg">
+                                    <img class="h-40 rounded w-full object-cover object-center mb-6"
+                                        src="https://www.planetware.com/photos-large/IND/india-top-attractions-harmandir-sahib.jpg"
+                                        alt="content">
+                                    <h3 class="tracking-widest text-teal-500 text-xs font-medium title-font">INDIA
+                                    </h3>
+                                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">The Golden Temple of
+                                        Amritsar</h2>
+                                    <p class="leading-relaxed text-base">The holiest of India's many Sikh shrines (it
+                                        also attracts many Hindus and people of other faiths), the temple was built in a
+                                        blend of Hindu and Islamic styles, its lower marble section featuring .</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+    </section>
+
+</body>
+
+</html>
