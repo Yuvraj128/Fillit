@@ -1,0 +1,2 @@
+# DjangoProject
+A Web application.
