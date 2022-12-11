@@ -1,0 +1,78 @@
+{% block content %}
+{% load static %}
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Login</title>
+       <!-- fontawesome link start -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+       <!-- fontawesome link end -->
+       <!-- bootstrap link start -->
+       <!-- Latest compiled and minified CSS -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+       <!-- jQuery library -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+       <!-- Latest compiled JavaScript -->
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+       <!-- bootstrap link end -->
+
+       <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+
+<body>
+       <div class="container">
+              <div class="mycard">
+                     <div class="row">
+                            <div class="col-md-6">
+                                   <div class="myleftctn">
+                                          <form action="Login" class="myForm text-center" method = "POST">
+                                          {% csrf_token %}
+                                                 <header>Login</header>
+                                                 <div class="form-group">
+                                                        <i class="fas fa-user"></i>
+                                                        <input type="text" class="myInput"
+                                                               placeholder="Your Username" id="username" name="username"
+                                                               required>
+                                                 </div>
+                                                 <div class="form-group">
+                                                        <i class="fas fa-lock"></i>
+                                                        <input type="password" name="password" class="myInput" id="password"
+                                                               placeholder="Your Password" required>
+                                                 </div>
+                                                 <div class="form-group">
+                                                        <label for="check_1">
+                                                               <input type="checkbox" name="check_1" id="check_1">
+                                                               <small>I read and agree to terms &
+                                                                      Conditions</small></input>
+                                                               <!-- <div class="invalid-feedback">You must check the box</div> -->
+                                                        </label>
+                                                 </div>
+                                                 <input type="submit" value="Login" class="butt">
+                                          </form>
+                                   </div>
+                            </div>
+                            <div class="col-md-6">
+                                   <div class="myrightctn">
+                                          <div class="box">
+                                                 <Header>Hello World!</Header>
+                                          </div>
+                                          <p> adipisicing elit. Adipisci temporibus fugiat architecto cum voluptatibus
+                                                 magnam aliquam est id earum deleniti voluptate reprehenderit ut,
+                                                 laboriosam consequuntur. At eos et laudantium atque.</p>
+                                          <input type="button" value="Learn More" class="butt_out">
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+       </div>
+</body>
+
+</html>
+
+{% endblock %}
