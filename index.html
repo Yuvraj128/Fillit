@@ -1,0 +1,499 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       
+
+       <!-- this link is 4.5.2 -->
+       <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+              integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+              crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+              integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+              crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+              crossorigin="anonymous"></script> -->
+
+
+       <!-- this link is bootstrap 4.0.0 -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+              integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+              crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+              integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+              crossorigin="anonymous"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+              integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+              crossorigin="anonymous"></script>
+       <!-- Latest compiled and minified CSS -->
+       <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+              crossorigin="anonymous"> -->
+
+       <!-- Optional theme -->
+       <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+              integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+              crossorigin="anonymous"> -->
+
+       <!-- Latest compiled and minified JavaScript -->
+       <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+              integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+              crossorigin="anonymous"></script> -->
+
+       <!-- font awesome cdn link -->
+       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+              integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+              crossorigin="anonymous" />
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+              integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+              crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+       <!-- j.query cdn link -->
+       <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+              integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+
+       <!-- external css  -->
+       <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<script>
+       // $(function () {
+       //        $('.carousel').carousel({
+       //               interval: 100
+
+       //        }
+       //        );
+       // })
+</script>
+
+<body>
+       <header>
+              <div class="logo">
+                     <img src="{% static 'image/logo.png' %}" height="120px" alt="">
+              </div>
+              <h2>Ab Koi Form Rukega Nhi </h2>
+              <div class="social-media">
+                     <i class="fab fa-facebook"></i>
+                     <i class="fab fa-instagram"></i>
+                     <i class="fab fa-twitter"></i>
+
+              </div>
+
+       </header>
+       <nav>
+              <ul>
+                     <li><a href="">Home</a></li>
+                     <li><a href="">Services <i class="fas fa-angle-down"></i></a>
+                            <div class="services-list">
+
+                                   <ul>
+
+                                          <li><i class="fas fa-angle-double-right"></i>form filling</li>
+                                          <li><i class="fas fa-angle-double-right"></i>college counseling</li>
+                                          <li><i class="fas fa-angle-double-right"></i>career guidence</li>
+                                          <li><i class="fas fa-angle-double-right"></i>website designing</li>
+
+
+                                   </ul>
+                            </div>
+                     </li>
+                     <li><a href="">Join us <i class="fas fa-angle-down"></i></a>
+                            <div class="services-list" id="list2">
+
+                                   <ul>
+
+                                          <li><i class="fas fa-angle-double-right"></i>as a team member</li>
+                                          <li><i class="fas fa-angle-double-right"></i>as a devloper</li>
+                                          <li><i class="fas fa-angle-double-right"></i>as a content writer</li>
+
+                                   </ul>
+                            </div>
+                     </li>
+                     <li><a href="">About</a></li>
+                     <li><a href="">Contact us</a></li>
+              </ul>
+              {% if user.is_authenticated %} 
+                    <p> Welcome {{ user.username }} <br> </p>
+              {% endif %}    
+              
+                     <a href="{% url 'Login' %}"><i class="far fa-user"></i> Login</a>
+                     <a href="{% url 'register' %}"><i class="far fa-user"></i> Register</a>
+                     <a href="{% url 'Logout' %}"><i class="far fa-user"></i> Logout</a>
+
+       </nav>
+
+       <div id="carouselExampleIndicators" class="carousel carousel-fade" data-ride="carousel">
+              <ol class="carousel-indicators">
+                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                     <div class="carousel-item active" data-interval="1000">
+                            <img class="d-block w-100" src="{% static 'image/download.jpeg' %}" alt="First slide">
+                     </div>
+                     <div class="carousel-item" data-interval="1000">
+                            <img class="d-block w-100" src="{% static 'image/download1.jpeg' %}" alt="Second slide">
+                     </div>
+                     <div class="carousel-item" data-interval="1000">
+                            <img class="d-block w-100" src="{% static 'image/download3.jpeg' %}" alt="Third slide">
+                     </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Next</span>
+              </a>
+       </div>
+       <div class="container-fluid">
+              <h2 class="f-heading"><span>Present </span>form</h2>
+              <div class="row ">
+                     <div class="col-lg-8 ">
+                            <div class="f1-type" id="table1">
+                                   <div class="f-card">
+                                          <table>
+                                                 <tr class="table-heading">
+                                                        <th>form name : </th>
+                                                        <th>form-date :</th>
+                                                        <th>form-lastdate :</th>
+                                                        <th>fill</th>
+
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number my abhishek chhaprer namw is 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                                 <tr>
+                                                        <td>form number 1</td>
+                                                        <td>15-10-2020</td>
+                                                        <td>10-12-2021</td>
+                                                        <td><button class="table-btn">click me</button></td>
+                                                 </tr>
+                                          </table>
+
+                                   </div>
+
+                            </div>
+                     </div>
+                     <div class="col-lg-4 ">
+                            <div class="imp-section">
+
+
+                                   <h3>Important Link</h3>
+
+                                   <div class="row link-section">
+                                          <div class="col-lg-5 result">
+                                                 <h4 style="width: 30%;">Result</h4>
+                                                 <ul>
+                                                        <li>RGPV-Result</li>
+                                                        <li>BU-Result</li>
+                                                        <li>DAVV-Result</li>
+                                                        <li>10TH-Result</li>
+                                                        <li>12TH-result</li>
+                                                        <li>JEE/Advance-Result</li>
+                                                 </ul>
+                                          </div>
+
+                                          <div class="col-lg-5 other">
+                                                 <h4>Other Link</h4>
+                                                 <ul>
+                                                        <li>Scholarship</li>
+                                                        <li>other</li>
+                                                        <li>other</li>
+                                                        <li>other</li>
+                                                        <li>other</li>
+                                                        <li>other</li>
+                                                 </ul>
+
+                                          </div>
+                                   </div>
+
+                            </div>
+
+
+
+
+                     </div>
+
+              </div>
+       </div>
+
+
+       <button id="chat_button" type="button" class="collapsible">Chat
+
+              <i class="fas fa-comment"></i>
+       </button>
+       <div class="content">
+              <div class="full-chat-block">
+                     <div class="chat-bar-collapsible">
+                            <div class="outer-container">
+                                   <!-- message -->
+                                   <div id="chatbox">
+                                          <h5 id="chat-timestamp"></h5>
+                                          <p id="botstartermessage" class="bottext"><span>Loading...</span></p>
+                                   </div>
+                                   <!-- user input box -->
+                                   <div class="chat-bar-input-block">
+                                          <div id="userinput">
+                                                 <input type="text" name="msg" id="textinput" class="input-box"
+                                                        placeholder="tap 'enter' to send a message">
+                                                 <p></p>
+                                          </div>
+                                          <div class="chat-bar-icons">
+                                                 <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                                        onclick="heartbutton()"></i>
+                                                 <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-heart"
+                                                        onclick="sendbutton()"></i>
+                                          </div>
+                                   </div>
+                                   <div id="chat-bar-bottom">
+                                          <p></p>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+
+       </div>
+       <div class="container">
+              <h2 class="f-heading"><span>Upcoming </span>form</h2>
+              <div class="row">
+                     <div class="col-lg-4 col-md-5 col-sm-6">
+                            <div class="the-container">
+                                   <div class="the-card">
+                                          <div class="the-front">
+                                                 <h4>After 10th Class</h4>
+                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                                                        incidunt officiis voluptas harum distinctio </p>
+                                          </div>
+                                          <div class="the-back">
+                                                 <ul>
+                                                        <li>link number 1 <button>Book now</button></li>
+                                                        <li>link number 1 <button>Book now</button></li>
+                                                        <li>link number 1 <button>Book now</button></li>
+                                                        <li>link number 1 <button>Book now</button></li>
+                                                 </ul>
+                                          </div>
+                                   </div>
+                            </div>
+                     </div>
+                     <div class="col-lg-4 col-md-5 col-sm-6">
+                            <div class="the-container">
+                                   <div class="the-card">
+                                          <div class="the-front">
+                                                 <h4>After 12th Class</h4>
+                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                                                        incidunt officiis voluptas harum distinctio </p>
+
+                                          </div>
+                                          <div class="the-back">
+                                                 <ul>
+                                                        <li>link number 1 <button>Book now</button></li>
+                                                        <li>link number 1 <button>Book now</button></li>
+                                                        <li>link number 1 <button>Book now</button></li>
+                                                        <li>link number 1 <button>Book now</button></li>
+                                                 </ul>
+                                          </div>
+                                   </div>
+                            </div>
+                     </div>
+                     <div class="col-lg-4 col-md-5 col-sm-6">
+                            <div class="the-container">
+                                   <div class="the-card">
+                                          <div class="the-front">
+                                                 <h4>After UG/PG </h4>
+                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                                                        incidunt officiis voluptas harum distinctio </p>
+
+                                          </div>
+                                          <div class="the-back">
+                                                 <ul>
+                                                        <li>link number 1 <button>Book now</button></li>
+                                                        <li>link number 1 <button>Book now</button></li>
+                                                        <li>link number 1 <button>Book now</button></li>
+                                                        <li>link number 1 <button>Book now</button></li>
+                                                 </ul>
+                                          </div>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+       </div>
+
+       <footer>
+              <img src="{% static 'image/logo.png' %}" alt="">
+              <div class="row footer">
+                     <dic class="col-lg-4 footer-sec1">
+                            <address>LNCT Group of Colleges, Raisen Road, nr. Hanuman Mandir, Kalchuri Nagar,
+                                   Bhopal, Madhya Pradesh</address>
+                            <p>Bhopal(M.P)</p>
+                            <p>yourname123@gmail.com</p>
+                            <p>+91 201-696-6243</p>
+                     </dic>
+                     <div class="col-lg-4 footer-sec2">
+                            <ul style="list-style: none;">
+                                   <h4 style="color: white;">Services</h4>
+                                   <li>home</li>
+                                   <li>services</li>
+                                   <li>contact</li>
+                                   <li>about us</li>
+                                   <li>more details</li>
+                            </ul>
+                     </div>
+                     <div class="col-lg-4 footer-sec3">
+                            <h4 style="color: white;">Important</h4>
+                            <p>Lorem ipsum dolor sit amet consecteturet consectetur adipisicing elit. Corrupti, natus
+                                   veniam
+                                   voluptates quas odio qui quod! Nequeet consectetur adipisicing elit. Corrupti, natus
+                                   veniam
+                                   voluptates quas odio qui quod! Neque adipisicing elit. Corrupti, natus veniam
+                                   voluptates quas odio qui quod! Neque.</p>
+
+                     </div>
+              </div>
+       </footer>
+       <p class="copyright">copyright@2021 fill-it .lnc. all right reserved </p>
+
+</body>
+<script src="{% static 'css/chat js/chat.js' %}"></script>
+<script src="{% static 'css/chat js/response.js' %}"></script>
+
+</html>
