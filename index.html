@@ -1,4 +1,3 @@
-{% load static %}
 
 <html lang="en">
 
@@ -34,20 +33,9 @@
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
               integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
               crossorigin="anonymous"></script>
-       <!-- Latest compiled and minified CSS -->
-       <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-              crossorigin="anonymous"> -->
+       
 
-       <!-- Optional theme -->
-       <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-              integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-              crossorigin="anonymous"> -->
-
-       <!-- Latest compiled and minified JavaScript -->
-       <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-              integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-              crossorigin="anonymous"></script> -->
+       
 
        <!-- font awesome cdn link -->
        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -62,22 +50,14 @@
               integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 
        <!-- external css  -->
-       <link rel="stylesheet" href="{% static 'css/index.css' %}">
+       <link rel="stylesheet" href="css/index.css">
 </head>
-<script>
-       // $(function () {
-       //        $('.carousel').carousel({
-       //               interval: 100
 
-       //        }
-       //        );
-       // })
-</script>
 
 <body>
        <header>
               <div class="logo">
-                     <img src="{% static 'image/logo.png' %}" height="120px" alt="">
+                     <img src="image/logo.png" height="120px" alt="">
               </div>
               <h2>Ab Koi Form Rukega Nhi </h2>
               <div class="social-media">
@@ -91,7 +71,7 @@
        <nav>
               <ul>
                      <li><a href="">Home</a></li>
-                     <li><a href="">Services <i class="fas fa-angle-down"></i></a>
+                     <li><a href="#services">Services <i class="fas fa-angle-down"></i></a>
                             <div class="services-list">
 
                                    <ul>
@@ -120,13 +100,13 @@
                      <li><a href="">About</a></li>
                      <li><a href="">Contact us</a></li>
               </ul>
-              {% if user.is_authenticated %} 
+<!--               {% if user.is_authenticated %} 
                     <p> Welcome {{ user.username }} <br> </p>
-              {% endif %}    
+              {% endif %}     -->
               
-                     <a href="{% url 'Login' %}"><i class="far fa-user"></i> Login</a>
-                     <a href="{% url 'register' %}"><i class="far fa-user"></i> Register</a>
-                     <a href="{% url 'Logout' %}"><i class="far fa-user"></i> Logout</a>
+                     <a href="templates/login.html"><i class="far fa-user"></i> Logins</a>
+                     <a href="templates/signup.html"><i class="far fa-user"></i> Registers</a>
+                     <a href="#"><i class="far fa-user"></i> Logout</a>
 
        </nav>
 
@@ -156,7 +136,7 @@
                      <span class="sr-only">Next</span>
               </a>
        </div>
-       <div class="container-fluid">
+       <div class="container-fluid" id="services">
               <h2 class="f-heading"><span>Present </span>form</h2>
               <div class="row ">
                      <div class="col-lg-8 ">
@@ -459,7 +439,7 @@
        </div>
 
        <footer>
-              <img src="{% static 'image/logo.png' %}" alt="">
+              <img src="images/logo.png" alt="">
               <div class="row footer">
                      <dic class="col-lg-4 footer-sec1">
                             <address>LNCT Group of Colleges, Raisen Road, nr. Hanuman Mandir, Kalchuri Nagar,
@@ -493,7 +473,7 @@
        <p class="copyright">copyright@2021 fill-it .lnc. all right reserved </p>
 
 </body>
-<script src="{% static 'css/chat js/chat.js' %}"></script>
-<script src="{% static 'css/chat js/response.js' %}"></script>
+<!-- <script src="#"></script>
+<script src="#"></script> -->
 
 </html>
