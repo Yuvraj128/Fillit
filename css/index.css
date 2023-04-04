@@ -456,12 +456,13 @@ footer{
        background-color:rgb(1, 37, 61) ;
        color: rgb(113, 128, 138);
        padding: 15px 30px;
+       postition: relative;
 }
 footer img{
        
        height: 80px;
        position: absolute;
-       bottom: -790px;
+       top: 0;
        left: 20px;
        opacity: 0.5;
 }
