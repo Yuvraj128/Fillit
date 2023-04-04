@@ -77,8 +77,11 @@ nav ul li :hover{
 }
 
 .login{
-       position: relative;
-       right: -600;
+       position: absolute;
+       right: 10px;
+}
+.login>li>a{
+       margin: 4px;
 }
 
 /* Navigation styling done */
