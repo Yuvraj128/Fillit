@@ -1,0 +1,112 @@
+*{
+       margin: 0px;
+       padding: 0px;
+       box-sizing: border-box;
+}
+
+.request-box{
+       position: relative;
+       top: 30px;
+       
+       
+       /* border: 2px solid black; */
+       background-color: rgb(176, 218, 231);
+       
+       height: 90%;
+       width: 100%;
+       
+}
+.request-box img{
+       position: absolute;
+       left:650px;
+       height: 300px;
+       top: 200px;
+       opacity: 0.7;
+}
+.request-box h2{
+       text-align: center;
+       color: whitesmoke;
+       font-weight:700 ;
+       padding: 5px 0px;
+       background-color: rgb(4, 77, 99);
+}
+.sub-head{
+       
+       margin-top: 25px;
+       margin-left: 50px;
+}
+.sub-head h3{
+       margin: 15px 1px;
+}
+.sub-head p{
+       margin: 15px 1px;
+       color: rgb(90, 90, 90);
+}
+
+.date-section{
+       display: flex;
+       flex-flow: column;
+}
+.date-section label{
+       font-size: 17px;
+       font-weight: 600;
+       margin-left: 15px;
+       
+}
+textarea{
+       width: 300px;
+       height: 100px;
+       border: none;
+       /* background-color: #385f74; */
+       background-color: #176b8f;  
+       color: #ffffffe1;
+       padding: 10px 12px;
+       border-radius: 10px;
+}
+textarea::placeholder{
+       color: #ffffff;
+}
+input[type="date"]{
+       width: 200px;
+       padding: 5px 15px;
+       color: #ffffffd5;
+       font-weight: 500;
+       margin-bottom: 10px;
+       border: none;
+       border-radius: 50px;
+       background-color: #176b8f;  
+}
+.in{
+       display: flex;
+       margin: 15px 30px;
+       font-size: 18px;
+     
+}
+.in input{
+       margin-left: 20px;
+       margin-top: 10px;
+}
+.in p{
+       padding-left: 10px;
+}
+.btn{
+       position: relative;
+       top: 15px;
+       left: 300px;
+       
+}
+.accept ,.cancel{
+       background-color: rgb(4, 77, 99);  
+       border: none;
+       border-radius: 10px;
+       margin: 0px 5px;
+       padding: 8px 18px;
+       color: whitesmoke;
+       font-weight: 600;
+       
+}
+.accept:hover ,.cancel:hover{
+       background-color: rgb(1, 54, 70);
+       transition: all .5s ease-out;
+}
+
