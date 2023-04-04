@@ -2,6 +2,7 @@
        margin: 0px;
        padding: 0px;
        box-sizing: border-box;
+       overflow: hidden;
 }
 
 /* Styling header */
@@ -459,7 +460,7 @@ footer{
        background-color:rgb(1, 37, 61) ;
        color: rgb(113, 128, 138);
        padding: 15px 30px;
-       postition: relative;
+       position: relative;
 }
 footer img{
        
