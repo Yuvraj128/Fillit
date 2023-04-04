@@ -100,11 +100,9 @@
                      <li><a href="">About</a></li>
                      <li><a href="">Contact us</a></li>
               </ul>
-<!--               {% if user.is_authenticated %} 
-                    <p> Welcome {{ user.username }} <br> </p>
-              {% endif %}     -->
+
               
-                     <a href="templates/login.html"><i class="far fa-user"></i> Logins</a>
+                     <a href="templates/login.html"><i class="far fa-user btn-design"></i> Logins</a>
                      <a href="templates/signup.html"><i class="far fa-user"></i> Registers</a>
                      <a href="#"><i class="far fa-user"></i> Logout</a>
 
@@ -118,13 +116,13 @@
               </ol>
               <div class="carousel-inner">
                      <div class="carousel-item active" data-interval="1000">
-                            <img class="d-block w-100" src="{% static 'image/download.jpeg' %}" alt="First slide">
+                            <img class="d-block w-100" src="image/download.jpeg" alt="First slide">
                      </div>
                      <div class="carousel-item" data-interval="1000">
-                            <img class="d-block w-100" src="{% static 'image/download1.jpeg' %}" alt="Second slide">
+                            <img class="d-block w-100" src="image/download1.jpeg" alt="Second slide">
                      </div>
                      <div class="carousel-item" data-interval="1000">
-                            <img class="d-block w-100" src="{% static 'image/download3.jpeg' %}" alt="Third slide">
+                            <img class="d-block w-100" src="image/download3.jpeg" alt="Third slide">
                      </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -337,11 +335,6 @@
               </div>
        </div>
 
-
-       <button id="chat_button" type="button" class="collapsible">Chat
-
-              <i class="fas fa-comment"></i>
-       </button>
        <div class="content">
               <div class="full-chat-block">
                      <div class="chat-bar-collapsible">
